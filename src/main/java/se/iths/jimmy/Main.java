@@ -62,24 +62,5 @@ public class Main {
             e.printStackTrace();
         }
 
-
-//        System.out.println("Söker och listar befintliga filmer...");
-//        movies.forEach(movie -> System.out.println(movie.toDocument().toJson()));
-//        if (moviesDocs.isEmpty()) {
-//            System.out.println("Inga filmer hittades");
-//            return new ArrayList<>();
-//        }
-//
-//
-//        ui.showMessage();
-//
-//
-//        System.out.println("Filmen: " + title + " hittades inte...");
-//
-//
-//        System.out.println("Hittar ingen film att uppdatera");
-//        System.out.println("Film uppdaterades: '" + updatedMovie.toJson() + "'");
-
-
     }
 }

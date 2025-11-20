@@ -62,6 +62,14 @@ public class Movie {
         this.genres = genres;
     }
 
+    public String toString() {
+        return "Movie{" +
+                "title='" + title + '\'' +
+                ", year=" + year +
+                ", genres=" + genres +
+                '}';
+    }
+
     public Document toDocument() {
         List<Document> genreDocs = new ArrayList<>();
         if(this.genres != null) {

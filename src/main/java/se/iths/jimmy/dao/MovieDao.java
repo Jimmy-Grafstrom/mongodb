@@ -5,7 +5,7 @@ import org.bson.Document;
 import java.util.List;
 
 public interface MovieDao<T> {
-    void insert(String title, int year);
+    void insert(T movie);
 
     List<T> findAll();
 

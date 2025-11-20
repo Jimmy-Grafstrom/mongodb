@@ -31,10 +31,7 @@ public class Genre {
 
     @Override
     public String toString() {
-        return "Genre{" +
-                "name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                '}';
+        return name;
     }
 
     public Document toDocument() {
@@ -50,4 +47,10 @@ public class Genre {
         genre.setName(document.getString("name"));
         return genre;
     }
+    // Constants for genres
+    public static final Genre ACTION = new Genre("Action", "Filmer med action");
+    public static final Genre DRAMA = new Genre("Drama", "Gripande och dramatiska filmer");
+    public static final Genre COMEDY = new Genre("Komedi", "Roliga filmer med gott slut");
+    public static final Genre HORROR = new Genre("Skräck", "Läskiga filmer");
+    public static final Genre SCIFI = new Genre("Sci-Fi", "Science fiction filmer");
 }
